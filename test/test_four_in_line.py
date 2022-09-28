@@ -1,5 +1,3 @@
-
-
 import unittest
 from four_in_line import Fullboard, Four_in_line
 
