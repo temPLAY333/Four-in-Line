@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: Running tests
-          command: python3 -m uniitest
+          command: python3 -m unittest
