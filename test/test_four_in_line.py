@@ -1,4 +1,5 @@
-import unittest
+import unittest, sys
+sys.path.append('/home/tomasbourguet/Documents/Programacion/four_in_line/game')
 from four_in_line import Fullboard, Four_in_line
 
 class Test_four_in_line(unittest.TestCase):
@@ -6,7 +7,7 @@ class Test_four_in_line(unittest.TestCase):
         game = Four_in_line()
         self.assertEqual(game.player_turn, 1)
 
-    def test_01_move_1(self):
+    def test_01_moves(self):
         game = Four_in_line()
         game.input_token(4)
         self.assertEqual(game.board[5][4], 1)

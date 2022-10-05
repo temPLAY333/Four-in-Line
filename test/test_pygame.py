@@ -1,7 +1,8 @@
-import unittest
+import sys
+sys.path.append('/home/tomasbourguet/Documents/Programacion/four_in_line/game')
+import unittest, pygame
+from four_in_line import *
 from unittest.mock import patch
-import pygame
-from four_in_line import Game_four_in_line
 
 @patch('pygame.display.update')
 @patch('pygame.display.flip')
