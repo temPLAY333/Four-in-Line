@@ -1,5 +1,5 @@
 import unittest, sys
-sys.path.append('/home/tomasbourguet/Documents/Programacion/four_in_line/game')
+sys.path.append('C:\\Users\\Admin\\Documents\\PythonCodigos\\Computacion\\4_en_Linea\\game')
 from four_in_line import Fullboard, Four_in_line
 
 class Test_four_in_line(unittest.TestCase):
