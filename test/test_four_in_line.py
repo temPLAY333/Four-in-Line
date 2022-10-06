@@ -1,6 +1,5 @@
-import unittest, sys
-sys.path.append('C:\\Users\\Admin\\Documents\\PythonCodigos\\Computacion\\4_en_Linea\\game')
-from four_in_line import Fullboard, Four_in_line
+import unittest
+from game.four_in_line import *
 
 class Test_four_in_line(unittest.TestCase):
     def test_00_turn(self):
@@ -221,5 +220,5 @@ class Test_four_in_line(unittest.TestCase):
 
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#    unittest.main()

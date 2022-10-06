@@ -1,5 +1,5 @@
 import pygame
-from four_in_line import Four_in_line, Fullboard
+from game.four_in_line import *
 
 class Game_four_in_line():
     def __init__(self):
