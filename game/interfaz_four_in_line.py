@@ -3,7 +3,9 @@ from .four_in_line import Fullboard, Four_in_line
 game = Four_in_line()
 class Interfaz ():
 
-    def main (self):
+    def main (self, num=1):
+        if num == 0:
+            return True
         feedback = input("""You want to play the fantastic game of *Four in Line*!!??
         Send *play* to 811-0800-2615 RIGHT NOW
         """)
