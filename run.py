@@ -5,4 +5,5 @@ from test.test_interfaz import Test_interfaz
 import pygame, unittest
 
 if __name__ == "__main__":
-    unittest.main()
+    game = Interfaz()
+    game.main()

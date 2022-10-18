@@ -7,8 +7,8 @@ class Interfaz ():
         if num == 0:
             return True
         feedback = input("""You want to play the fantastic game of *Four in Line*!!??
-        Send *play* to 811-0800-2615 RIGHT NOW
-        """)
+Send *play* to 811-0800-2615 RIGHT NOW
+""")
         if feedback != "play":
             print("FUCK 0FF")
         else:
@@ -20,13 +20,11 @@ class Interfaz ():
                     int(color)
                 except ValueError:
                     print("""
-            Write a number, asshole
-                    """)
+            Write a number, asshole""")
                     continue
                 if not (int(color) in game.colors.keys()) or int(color) == 0:
                     print("""
-            Choose one of the options, asshole
-                    """)
+            Choose one of the options, asshole""")
                     continue
                 else:
                     game.select_color(player, int(color))
