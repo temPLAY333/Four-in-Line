@@ -7,5 +7,4 @@ class Test_interfaz(unittest.TestCase):
     def test(self):
         game = Interfaz()
         if 0 == 1:
-            game.main()
-        self.assertEqual(1, True)
+            self.assertEqual(game.main(), True)
