@@ -217,7 +217,30 @@ class Test_four_in_line(unittest.TestCase):
         self.assertEqual(game.SE_diagonal_win(),[2,2,1,1,2])
         self.assertEqual(game.NE_diagonal_win(),[2,2,2,1,2,0])
         self.assertEqual(game.game_end(), 1)
+    
+    def test_19_color(self):
+        game = Four_in_line()
+        game.select_color(1, 2)
+        game.select_color(2, 4)
+        self.assertEqual(game.player_1,2)
+        self.assertEqual(game.player_2,4)
 
+    def test_20_board(self):
+        game = Four_in_line()
+        board = game.format_to_ascii()
+        self.assertEqual(board, "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n"
+                                "|    |    |    |    |    |    |    |\n"
+                                "+----+----+----+----+----+----+----+\n")
 
 
 # if __name__ == '__main__':
