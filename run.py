@@ -6,4 +6,4 @@ import pygame, unittest
 
 if __name__ == "__main__":
     game = Interfaz()
-    game.main()
+    unittest.main()

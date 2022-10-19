@@ -23,7 +23,7 @@ class Four_in_line():
             self.player_2 = num
 
     def input_token(self, col):
-        if col >= 7 or self.board[0][col] != 0:
+        if col >= 7 or col < 0 or self.board[0][col] != 0:
            raise ValueError()
         for row in range(5,-1,-1):
             if self.board[row][col] == 0:
@@ -38,9 +38,9 @@ class Four_in_line():
             if self.board[0][colum] == 0:
                 break
         else:
-            raise Fullboard("You are so so so bad, that you can't win one match, pathetic")
+            raise Fullboard()
 
-    def format_to_ascii(self) :
+    def __str__(self):
         final_string = '+----'*7 + '+' + '\n'
         for row in self.board:
             for col in row:
